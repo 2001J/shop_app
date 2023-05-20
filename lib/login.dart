@@ -21,7 +21,7 @@ class _loginpageState extends State<loginpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Colors.red[100],
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(20),
         child: AppBar(
@@ -69,7 +69,7 @@ class _loginpageState extends State<loginpage> {
                   controller: passwordController,
                   validator: (password) {
                     if (password!.length < 6) {
-                      return "Password must be more than 6 digits";
+                      return"Password must be more than 6 digits";
                     }
                     return null;
                   },

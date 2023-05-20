@@ -19,7 +19,7 @@ class _signuppageState extends State<signuppage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Colors.red[100],
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(20),
         child: AppBar(

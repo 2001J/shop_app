@@ -25,42 +25,163 @@ class _ManageState extends State<Manage> {
         backgroundColor: Colors.red[900],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Container(
-          height: 100,
-          decoration: BoxDecoration(
-              color: Colors.white,
-              boxShadow: const [
-                BoxShadow(
-                  blurRadius: 2,
-                  color: Colors.grey,
-                  spreadRadius: 2,
-                )
-              ],
-              borderRadius: BorderRadius.circular(15)),
-          width: double.infinity,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Shimmer.fromColors(
-                baseColor: Colors.grey,
-                highlightColor: Colors.blue,
-                child: const Text(
-                  "Joseph Paul Koyi",
-                  style: TextStyle(fontSize: 24),
-                ),
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          children: [
+            Container(
+              height: 100,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: const [
+                    BoxShadow(
+                      blurRadius: 2,
+                      color: Colors.grey,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15)),
+              width: double.infinity,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Shimmer.fromColors(
+                    baseColor: Colors.grey,
+                    highlightColor: Colors.red,
+                    child: const Text(
+                      "Joseph Paul Koyi",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
+                  Shimmer.fromColors(
+                    baseColor: Colors.grey,
+                    highlightColor: Colors.blue,
+                    child: const Text(
+                      "210218316",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  )
+                ],
               ),
-              Shimmer.fromColors(
-                baseColor: Colors.grey,
-                highlightColor: Colors.blue,
-                child: const Text(
-                  "210218316",
-                  style: TextStyle(fontSize: 24),
-                ),
-              )
-            ],
-          ),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              height: 100,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: const [
+                    BoxShadow(
+                      blurRadius: 2,
+                      color: Colors.grey,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15)),
+              width: double.infinity,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Shimmer.fromColors(
+                    baseColor: Colors.grey,
+                    highlightColor: Colors.red,
+                    child: const Text(
+                      "Muhammad Faizan",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
+                  Shimmer.fromColors(
+                    baseColor: Colors.grey,
+                    highlightColor: Colors.blue,
+                    child: const Text(
+                      "210218304",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              height: 100,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: const [
+                    BoxShadow(
+                      blurRadius: 2,
+                      color: Colors.grey,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15)),
+              width: double.infinity,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Shimmer.fromColors(
+                    baseColor: Colors.grey,
+                    highlightColor: Colors.red,
+                    child: const Text(
+                      "Momen Alhaddad",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
+                  Shimmer.fromColors(
+                    baseColor: Colors.grey,
+                    highlightColor: Colors.blue,
+                    child: const Text(
+                      "210218317",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            Container(
+              height: 100,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: const [
+                    BoxShadow(
+                      blurRadius: 2,
+                      color: Colors.grey,
+                      spreadRadius: 2,
+                    )
+                  ],
+                  borderRadius: BorderRadius.circular(15)),
+              width: double.infinity,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Shimmer.fromColors(
+                    baseColor: Colors.grey,
+                    highlightColor: Colors.red,
+                    child: const Text(
+                      "Mohammad Majeed",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
+                  Shimmer.fromColors(
+                    baseColor: Colors.grey,
+                    highlightColor: Colors.blue,
+                    child: const Text(
+                      "210218347",
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
         ),
       ),
       /*drawer: Drawer(
