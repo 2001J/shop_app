@@ -101,6 +101,10 @@ class _signuppageState extends State<signuppage> {
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
+                            minimumSize: const Size(150,48),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
                             backgroundColor: Colors.red[900], elevation: 15),
                         child: const Text(
                           "Signup",

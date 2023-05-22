@@ -4,7 +4,6 @@ import 'package:shopping_app/extra.dart';
 import 'package:flutter/material.dart';
 import 'package:shopping_app/signup.dart';
 
-
 class loginpage extends StatefulWidget {
   const loginpage({Key? key}) : super(key: key);
 
@@ -23,7 +22,7 @@ class _loginpageState extends State<loginpage> {
     return Scaffold(
       backgroundColor: Colors.red[100],
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(20),
+        preferredSize: const Size.fromHeight(20),
         child: AppBar(
           title: const Text(
             "Shopping App",
@@ -69,7 +68,7 @@ class _loginpageState extends State<loginpage> {
                   controller: passwordController,
                   validator: (password) {
                     if (password!.length < 6) {
-                      return"Password must be more than 6 digits";
+                      return "Password must be more than 6 digits";
                     }
                     return null;
                   },
@@ -103,25 +102,28 @@ class _loginpageState extends State<loginpage> {
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.red[900], elevation: 15),
+                            minimumSize:const Size(150, 48),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                            ),
+                            backgroundColor: Colors.red[900],
+                            elevation: 15),
                         onPressed: () {
                           if (globalkey.currentState!.validate()) {
                             try {
                               FirebaseAuth.instance
                                   .signInWithEmailAndPassword(
-                                  email: emailController.text.trim(),
-                                  password: passwordController.text.trim())
-                                  .then(
-                                      (value) {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
+                                      email: emailController.text.trim(),
+                                      password: passwordController.text.trim())
+                                  .then((value) {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
                                           const WelcomePage()),
-                                    );
-                                  }
-                              );
-                            }catch(e){
+                                );
+                              });
+                            } catch (e) {
                               {
                                 {
                                   // ignore: avoid_print
@@ -145,9 +147,9 @@ class _loginpageState extends State<loginpage> {
                   style: TextStyle(fontSize: 24),
                 ),
                 TextButton(
-                  child:  Text(
+                  child: Text(
                     ">> Create an account",
-                    style: TextStyle(fontSize: 15,color: Colors.teal[900]),
+                    style: TextStyle(fontSize: 15, color: Colors.teal[900]),
                   ),
                   onPressed: () {
                     Navigator.push(
