@@ -35,6 +35,7 @@ dependencies:
   curved_navigation_bar:
   curved_labeled_navigation_bar:
   shimmer:
+  get:
 
 
 
